@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iplfavicon.ico">
+    <title>Login Form</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('bg1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        label{
+            color: white;
+        }
+
+        .login {
+            color: black;
+            text-align: center;
+            padding: 5%; 
+            border: 1px solid #ccc;
+            border-radius: 2%;
+            max-width: 50%; 
+            width: 300px;
+            margin-left: 15%;
+            backdrop-filter: blur(0.5rem); 
+        }
+
+        @media (max-width: 800px) {
+            .login {
+                padding: 2%; 
+            }
+        }
+
+        h5 {
+            margin-left: 2%;
+            margin-top: 4%; 
+        }
+
+        button {
+            margin-right: 2%; 
+        }
+    </style>
+</head>
+<body>    
+    <form class="login">
+        <h4 class="change" style="color: white;">LOGIN</h4>
+        <label for="USERNAME">USERNAME : </label>
+        <input type="text">
+        <br><br>
+        <div class="password-container">
+            <label for="PASSWORD">PASSWORD : </label>
+            <input type="password" id="passwordInput">
+        </div>
+        <br>
+        <div> <a href="home.html"><button type="button">Login</button></a>
+            <button type="reset">reset</button></div>
+       <br><a href="forgetpass.html" style="color: white;">forgetpassword</a>
+            <h5 style="color: white;">New to Website <a href="newuser.html"><input type="submit" value="enter"></a>  </h5>
+    </form>
+
+    <form>
+        
+    </form>
+</html>

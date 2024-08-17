@@ -1,0 +1,86 @@
+.head {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    background-color: #273271;
+    padding: 10px;
+}
+
+.team-box {
+    border: 1px solid #273271;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    background: #1875FF;
+    color: white;
+    font-family: inherit;
+    text-align: center;
+    font-size: 13px;
+    box-shadow: 0px 14px 56px -11px #1875FF;
+    width: 10em;
+    padding: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background: #0b5fd8;
+}
+
+.login {
+    border: 3px groove #273271;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    height: 300px;
+    margin: 5%; /* Adjusted margin for responsiveness */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .head {
+        font-size: 24px;
+    }
+
+    .team-box {
+        font-size: 14px;
+    }
+
+    .button {
+        width: 100%; /* Make the button full width on small screens */
+    }
+
+    .login {
+        margin: 10px; /* Adjusted margin for small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .head {
+        font-size: 18px;
+    }
+
+    .team-box {
+        font-size: 12px;
+    }
+
+    .login {
+        margin: 5px; /* Adjusted margin for extra small screens */
+    }
+}
